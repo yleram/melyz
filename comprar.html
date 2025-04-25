@@ -9,7 +9,7 @@
 <body>
     <a href="javascript:history.back()" class="btn-regresar">Regresar</a>
     <header>
-		<div class="logo-container">
+	<div class="logo-container">
             <img src="Ropa//logo.png" alt="Logotipo de Melyz" class="logo">
             <div class="decorative-images">
             <img src="Ropa/hoja 6.png" alt="Decorative Image Large" class="decorative-image-large">
@@ -25,13 +25,11 @@
             </ul>
         </nav>
     </header>
-	
    <div class="producto-container">
         <!-- Imagen del producto -->
         <div class="producto-imagen">
             <img id="producto-imagen" src="" alt="Imagen del producto">
         </div>
-
         <!-- Detalles del producto -->
         <div class="producto-detalles">
             <h2 id="producto-nombre">Nombre del producto</h2>
@@ -42,7 +40,6 @@
             <a href="pago.html" class="btn-comprar">Comprar ahora</a>
         </div>
     </div>
- 
     <script>
         // Obtén los parámetros de la URL
         const params = new URLSearchParams(window.location.search);
@@ -50,7 +47,6 @@
         const titulo = params.get('titulo');
         const descripcion = params.get('descripcion');
         const precio = params.get('precio');
-    
         // Actualiza el contenido de la página con los datos del producto
         if (imagen && titulo && descripcion && precio) {
             document.getElementById('producto-imagen').src = imagen;
