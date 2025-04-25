@@ -27,7 +27,6 @@
                 <p>Gracias por tu compra. Hemos recibido tu pago y tu pedido está siendo procesado.</p>
                 <a href="index.html" class="btn-volver">Volver al inicio</a>
             </div>
-
             <!-- Mensaje de error -->
             <div id="error" class="mensaje-error" style="display: none;">
                 <h2>⚠️ No se pudo realizar el pago</h2>
@@ -36,11 +35,9 @@
             </div>
         </section>
     </main>
-
     <script>
         // Simulación del estado del pago (éxito o error)
         const pagoExitoso = true; // Cambia a false para probar el mensaje de error
-
         if (pagoExitoso) {
             document.getElementById('exito').style.display = 'block';
             document.getElementById('error').style.display = 'none';
